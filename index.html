@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhumuza|Muhuan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js" integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.min.css" integrity="sha512-/k/mL9TQSZHAqtVqXJAiy5bt2w1P7gxdra0UlnFjVHF9a/LC2vxt7otx3BMcn79V/DZsPRwdw8tPlwbElMnIAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Start -->
+    <nav class="flex">
+        <div id="sidebar-overlay"></div>
+        <div class="column flex-center">
+            <div class="flex-center logo">
+                <div class="flex-center logo-icon">
+                    <i class="fa-brands fa-sketch"></i>
+                </div>
+                <h1 class="name">Muhumuza</h1>
+            </div>
+        </div>
+        <div class="column flex-center tabs-container" id="sidebar">
+            <div class="flex-center icon-wrapper" id="close-sidebar-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="#hero" class="flex-center tab active">
+                <h4>Home</h4>
+            </a>
+
+            <a href="#about" class="flex-center tab">
+                <h4>About</h4>
+            </a>
+            <a href="#skills" class="flex-center tab">
+                <h4>Skills</h4>
+            </a>
+            <a href="#services" class="flex-center tab">
+                <h4>Services</h4>
+            </a>
+            <a href="#projects" class="flex-center tab">
+                <h4>Projects</h4>
+            </a>
+            <a href="#feedbacks" class="flex-center tab">
+                <h4>Feedback</h4>
+            </a>
+            <a href="#blog" class="flex-center tab">
+                <h4>Blog</h4>
+            </a>
+        </div>
+        <div class="column flex-center buttons-wrapper">
+            <div class="flex-center handles-container">
+                <a href="#" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="flex-center icon-wrapper">
+                <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <a href="#contact" class="btn primary contact-btn">Hire Me</a>
+            <div class="flex-center icon-wrapper" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Hero Start -->
+     <section id="hero" class="flex blur-effect">
+        <div class="container">
+            <div class="column hero-image">
+                <img src="./assets/hero.png" alt="">
+            </div>
+            <div class="column">
+                <h1 class="heading-1">Creative <span class="gradient-text">User Interface</span>Designer</h1>
+                <p class="muted description">
+                    My passion lies in understanding user needs and translating them into functional 
+                    and aesthetically pleasing designs. With a strong foundation 
+                    in both design and development, I strive to create seamless interactions that
+                    enhance usability and drive satisfaction.
+                </p>
+                <div class="facts-container">
+                    <!-- Fact Start-->
+                    <div class="fact">
+                        <div class="flex-center top">
+                            <h1 class="title odometer" id="customers">0</h1>
+                            <h1 class="title">+</h1>
+                        </div>
+                        <p class="muted">Happy Customers</p>
+                    </div>
+                    <!-- Fact End-->
+
+                    <!-- Fact Start-->
+                    <div class="fact">
+                        <div class="flex-center top">
+                            <h1 class="title odometer" id="experience">0</h1>
+                            <h1 class="title">+</h1>
+                        </div>
+                        <p class="muted">Years Of Experience</p>
+                    </div>
+                    <!-- Fact End-->
+
+                    <!-- Fact Start-->
+                    <div class="fact">
+                        <div class="flex-center top">
+                            <h1 class="title odometer" id="projects-completed">0</h1>
+                            <h1 class="title">K+</h1>
+                        </div>
+                        <p class="muted">Completed Projects</p>
+                    </div>
+                    <!-- Fact End-->
+                </div> <!-- End of fact container-->
+                <div class="flex-center buttons-wrapper">
+                    <a href="#projects" class="btn">My Projects</a>
+                    <a href="#contact" class="btn primary">Hire Me</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Hero End -->
+
+    <!-- About Start -->
+     <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="sub-title primary">About Me</h3>
+                <h1 class="heading-1">I am Muhu<span class="primary">muza</span></h1>
+                <p class="muted">
+                    As a user interface designer, I blend creativity with functionality to create visually 
+                    stunning and intuitive digital experiences. I aim to transform complex ideas into simple,
+                    engaging designs that resonate 
+                    with users and elevate their interactions. Let’s bring your vision to life!
+                </p>
+                <div class="flex-center buttons-wrapper">
+                   <a href="#" class="btn primary readmore-btn">Read More</a>
+                <div class="video-cluster">
+                    <div class="flex-center play-btn">
+                        <div class="flex-center play"></div>
+                        <p>Play My Video</p>
+                    </div>
+                    <div class="video-container" id="video-container">
+                        <div class="video-clip">
+                            <div id="close-btn" class="btn primary">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <video src="./assets/video.mp4" id="video" controls></video>
+                        </div>
+                    </div>
+                </div><!--End of Video cluster--> 
+                </div> 
+            </div>
+
+            </div><!--End Section header-->
+
+            <div class="brands-container">
+                <div class="logos-slide gray-scale">
+                    <img src="./assets/logos/amazon.png" alt="">
+                    <img src="./assets/logos/facebook.png" alt="">
+                    <img src="./assets/logos/google.png" alt="">
+                    <img src="./assets/logos/linkedin.png" alt="">
+                    <img src="./assets/logos/microsoft.png" alt="">
+                    <img src="./assets/logos/netflix.png" alt="">
+                    <img src="./assets/logos/paypal.png" alt="">
+                    <img src="./assets/logos/samsung.png" alt="">
+                    <img src="./assets/logos/skype.png" alt="">
+                    <img src="./assets/logos/whatsapp.png" alt="">
+                </div>
+                <div class="logos-slide gray-scale">
+                    <img src="./assets/logos/amazon.png" alt="">
+                    <img src="./assets/logos/facebook.png" alt="">
+                    <img src="./assets/logos/google.png" alt="">
+                    <img src="./assets/logos/linkedin.png" alt="">
+                    <img src="./assets/logos/microsoft.png" alt="">
+                    <img src="./assets/logos/netflix.png" alt="">
+                    <img src="./assets/logos/paypal.png" alt="">
+                    <img src="./assets/logos/samsung.png" alt="">
+                    <img src="./assets/logos/skype.png" alt="">
+                    <img src="./assets/logos/whatsapp.png" alt="">
+                </div>
+            </div>
+
+            <div class="education-experience-container">
+                <div class="column">
+                    <h2 class="gradient-text heading-1">Education</h2>
+                    <div class="contents">
+                        <div class="box">
+                            <h4>2018 - 2019</h4>
+                            <h3>A Level</h3>
+                            <p>
+                                In 2019, I completed my A-Level studies with a focus on a 
+                                science combination of Physics, Chemistry, Mathematics, and ICT. 
+                                This rigorous academic journey fueled my passion for technology and innovation, 
+                                laying a strong foundation for
+                                my future endeavors in the fields of science and design.
+                            </p>
+                        </div>
+                        <div class="box">
+                           <h4>2021 - 2024</h4>
+                            <h3>Bachelors Degree</h3>
+                            <p>
+                                I earned my Bachelor’s degree in Science Technology with a focus
+                                on Physics from Kyambogo University, where I delved into the fascinating 
+                                world of scientific principles and technological innovations. 
+                                This program equipped me with essential skills and knowledge, 
+                                preparing me for exciting challenges in research and industry.
+                            </p> 
+                        </div>
+                        <div class="box">
+                           <h4>2023 - 2024</h4>
+                            <h3>Hustlers Degree</h3>
+                            <p>
+                                I embarked on a journey of self-discovery, navigating uncharted waters 
+                                and teaching myself essential skills. This experience has empowered
+                                me to thrive 
+                                independently and embrace challenges with confidence and resilience.
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="gradient-text heading-1">Experience</h2>
+                    <div class="contents">
+                        <div class="box">
+                           <h4>2022 - Present</h4>
+                            <h3>UI/UX Designer</h3>
+                            <p>
+                                My journey in UI/UX design has been incredible! 
+                                I've transformed ideas into engaging user experiences, 
+                                blending creativity with functionality. Every project has deepened my passion for crafting intuitive designs that 
+                                resonate with users and elevate their interactions.
+                            </p> 
+                        </div>
+                        <div class="box">
+                            <h4>2022 - Present</h4>
+                            <h3>Front End Developer</h3>
+                            <p>
+                                Front-end development has been an amazing adventure! 
+                                I've enjoyed bringing designs to life, creating interactive and 
+                                responsive web experiences. Each project challenges me to innovate and refine my skills, 
+                                making the journey both exciting and rewarding.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <h4>2018 - Present</h4>
+                            <h3>Graphics Designer</h3>
+                            <p>
+                                My experience in graphic design has been truly inspiring! 
+                                I love transforming ideas into captivating visuals, blending 
+                                creativity with strategy. Each project allows me to express 
+                                my artistic vision and connect with audiences in meaningful ways.
+                            </p>
+                        </div>
+                    </div>
+                </sdiv
+            </div>
+
+            
+        </div><!--End Container-->
+     </section>
+    <!-- About End -->
+
+    <!-- Skills Start -->
+     <section id="skills" class="blur-effect">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1 gradient-text">
+                    My Skills
+                </h1>
+                <p class="muted">
+                    I excel in web development, blending creativity and technical expertise.
+                    My exceptional skills in coding, design, and user experience ensure that every project not only meets but exceeds 
+                    client expectations, delivering innovative solutions.
+                </p>
+            </div>
+            <div class="skills-container">
+                <!--skill start-->
+                <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/figma.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Figma</h3>
+                        <h2 class="progress">95%</h2>
+                    </div>
+                </div>
+                <!--skill end-->
+
+                <!--skill start-->
+                 <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/sketch.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Sketch</h3>
+                        <h2 class="progress">65%</h2>
+                    </div>
+                </div>
+                <!--skill end-->
+
+                <!--skill start-->
+                 <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/xd.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Adobe Xd</h3>
+                        <h2 class="progress">95%</h2>
+                    </div>
+                </div>
+                <!--skill end-->
+
+                <!--skill start-->
+                 <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/photoshop.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Photoshop</h3>
+                        <h2 class="progress">65%</h2>
+                    </div>
+                </div>
+                <!--skill end-->
+            </div>
+        </div>
+     </section>
+    <!-- Skills end -->
+
+    <!--Services Start-->
+     <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">
+                    <span class="gradient-text">My Services</span>
+                </h1>
+                <p class="muted">
+                    Renowned for delivering exceptional services, I combine 
+                    expertise and a client-focused approach to meet diverse needs. 
+                    My commitment to quality, innovation, and 
+                    reliability sets me apart, ensuring every interaction is not 
+                    just satisfactory but truly transformative for those I serve.
+                </p>
+            </div>
+            <div class="services-container">
+                <!--service start-->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.1</h1>
+                        <h2 class="title">Research and Analysis</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            Through in-depth research and analysis, 
+                            I uncover user behaviors, needs, and pain points to create data-driven 
+                            design solutions that enhance user experiences, optimize usability, 
+                            and drive engagement for your digital products
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore Projects</a>
+                    </div>
+                </div>
+                <!--service end-->
+
+                <!--service start-->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.2</h1>
+                        <h2 class="title">Wire frames</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            I create intuitive wireframes that serve as the 
+                            blueprint for your digital product, ensuring seamless navigation, clear structure, 
+                            and a user-friendly experience before moving into design and development
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore Projects</a>
+                    </div>
+                </div>
+                <!--service end-->
+
+                <!--service start-->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.3</h1>
+                        <h2 class="title">Visual Design</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            I excel at creating stunning and impactful graphics that elevate brands. 
+                            My expertise ensures that every project not only meets but exceeds expectations, 
+                            delivering captivating 
+                            visuals that resonate with audiences and enhance user experiences.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore Projects</a>
+                    </div>
+                </div>
+                <!--service end-->
+
+                <!--service start-->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.4</h1>
+                        <h2 class="title">Interaction Design</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            I stand out by crafting engaging and user-friendly experiences. 
+                            My focus is on seamless interactions that captivate users, ensuring 
+                            every project not only looks great 
+                            but also enhances usability and drives meaningful connections.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore Projects</a>
+                    </div>
+                </div>
+                <!--service end-->
+
+                <!--service start-->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.5</h1>
+                        <h2 class="title">UI Development</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            I craft visually stunning, responsive, and user-friendly 
+                            interfaces that seamlessly bring your designs to life, ensuring high performance 
+                            and a flawless user experience across all devices.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore Projects</a>
+                    </div>
+                </div>
+                <!--service end-->
+
+                <!--service start-->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.6</h1>
+                        <h2 class="title">Usability Testing</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            I excel at uncovering insights that enhance user experiences. 
+                            My thorough approach ensures that every design is intuitive and effective, 
+                            helping clients create products that truly 
+                            resonate with users and meet their needs seamlessly.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore Projects</a>
+                    </div>
+                </div>
+                <!--service end-->
+            </div>
+        </div>
+     </section>
+    <!--Services End-->
+
+    <!--Projects Start-->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">
+                    <span class="gradient-text">My Projects</span>
+                </h1>
+            </div>
+            <div class="projects-container">
+                <!--project start-->
+                <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project-1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Project Management Dashboard Design</h3>
+                        <p class="muted">
+                            a powerful tool that centralizes project data, 
+                            providing real-time insights into progress, timelines, and team performance. It enables effective task tracking, resource allocation, and collaboration, ensuring projects stay on schedule 
+                            and within budget while enhancing communication among team members.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="#" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="#" class="btn primary">Demo</a>
+                    </div>
+                </div>
+                <!--project end-->
+
+                <!--project start-->
+                <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project-2.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Cloud File Storage App</h3>
+                        <p class="muted">
+                            allows you to securely store, access, and share your files from anywhere. 
+                            It offers seamless syncing across devices, automatic backups, and collaborative features, 
+                            ensuring your data is safe, 
+                            easily accessible, and organized for personal or professional use
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="#" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="#" class="btn primary">Demo</a>
+                    </div>
+                </div>
+                <!--project end-->
+
+                <!--project start-->
+                <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project-3.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Task Management Mobile App</h3>
+                        <p class="muted">
+                            an essential tool for organizing tasks on the go. It allows users to create, 
+                            prioritize, and track tasks seamlessly while setting reminders for deadlines. 
+                            With collaboration features, team members can share updates and stay connected, 
+                            enhancing overall productivity and ensuring nothing falls through the cracks
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="#" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="#" class="btn primary">Demo</a>
+                    </div>
+                </div>
+                <!--project end-->
+
+                <!--project start-->
+                <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project-4.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Online Payment Dashboard</h3>
+                        <p class="muted">
+                            an essential tool for managing and analyzing payment transactions in real-time. 
+                            It provides a centralized view of all payment activities, enabling businesses 
+                            to track transactions, monitor performance, and identify trends. With features like data export, customizable widgets, and detailed analytics, it streamlines 
+                            payment processes and enhances decision-making for improved financial management.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="#" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="#" class="btn primary">Demo</a>
+                    </div>
+                </div>
+                <!--project end-->
+            </div>
+        </div>
+    </section>
+    <!--Projects End-->
+
+    <!--Feedback Start-->
+    <section id="feedbacks">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">Clients' <span class="gradient-text">Feedback</span> </h1>
+                <p class="muted">
+                   I am deeply grateful for the trust and support of my amazing clients. 
+                   Their kind words and experiences inspire me every day. 
+                   Here are some heartfelt reviews that reflect the love and care I put into every service.
+                </p>
+            </div>
+            <div class="feedbacks-container">
+                <!--feedblock start-->
+                <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/user-1.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            Working with you on our website was a dream! The design is sleek, user-friendly, 
+                            and perfectly aligned with our brand. 
+                            You truly brought our vision to life with your exceptional web development skills!
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Walugembe Rogers</h2>
+                        <p class="muted">CTO Thunder Works</p>
+                    </div>
+                </div>
+                <!--feedblock end-->
+
+                <!--feedblock start-->
+                <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/user-2.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            Your UI/UX expertise transformed our platform into a seamless experience for our users. 
+                            The thoughtful design and functionality 
+                            have made navigating our site effortless. We couldn't be happier with the results!
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Joanita Nalujja</h2>
+                        <p class="muted">Chief of Staff | Mikes Bikes</p>
+                    </div>
+                </div>
+                <!--feedblock end-->
+
+                <!--feedblock start-->
+                <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/user-3.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            The graphics you created are stunning! They captured our brand's essence perfectly. 
+                            Your creativity and attention to detail are unmatched, 
+                            and we are thrilled with the final product. Thank you for your amazing work!
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Bill Clinton</h2>
+                        <p class="muted">General Manager i.O interiors</p>
+                    </div>
+                </div>
+                <!--feedblock end-->
+
+                <!--feedblock start-->
+                <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/user-4.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            The content you crafted was exactly what we needed—engaging, 
+                            clear, and on-point. Your ability to understand our voice and 
+                            message is truly impressive. 
+                            We’re so grateful for your dedication and talent!
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Mary Jane</h2>
+                        <p class="muted">CEO Flawless Designs</p>
+                    </div>
+                </div>
+                <!--feedblock end-->
+            </div>
+        </div>
+    </section>
+    <!--Feedback End-->
+
+    <!--Blogs Start-->
+    <section id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">
+                    <span class="gradient-text">Blogs</span>
+                </h1>
+                <p class="muted">
+                   I am excited to share my thoughts, insights, 
+                   and creative ideas with you through my blogs. Each piece is crafted with passion and care, 
+                   offering valuable tips and inspiration to help you on your journey
+                </p>
+            </div>
+            <div class="blogs-container">
+                <!--blog start-->
+                <div class="blog">
+                    <a href="#" class="picture">
+                        <img src="./assets/blog-1.png" alt="">
+                    </a>
+                    <div class="details">
+                        <h3 class="title clamp-2">
+                            Crafting an awesome user experience(UX)
+                        </h3>
+                        <p class="muted">
+                            ensures engagement, satisfaction, and seamless interaction with your product. 
+                        </p>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <a href="#" class="btn primary">Read More</a>
+                    </div>
+                </div>
+                <!--blog end-->
+
+                <!--blog start-->
+                <div class="blog">
+                    <a href="#" class="picture">
+                        <img src="./assets/blog-2.png" alt="">
+                    </a>
+                    <div class="details">
+                        <h3 class="title clamp-2">
+                            Effective Case Studies: Going Beyond The Surface
+                        </h3>
+                        <p class="muted">
+                            dive deep, showcasing real solutions, measurable impact, 
+                            and valuable insights that go beyond surface details.
+                        </p>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <a href="#" class="btn primary">Read More</a>
+                    </div>
+                </div>
+                <!--blog end-->
+
+                <!--blog start-->
+                <div class="blog">
+                    <a href="#" class="picture">
+                        <img src="./assets/blog-3.jpg" alt="">
+                    </a>
+                    <div class="details">
+                        <h3 class="title clamp-2">
+                            Why Choose Dark Theme? 
+                        </h3>
+                        <p class="muted">
+                            Choose a dark theme for reduced eye strain, 
+                            improved readability, and a sleek, modern look that enhances user focus
+                        </p>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <a href="#" class="btn primary">Read More</a>
+                    </div>
+                </div>
+                <!--blog end-->
+            </div>
+        </div>
+    </section>
+    <!--Blogs End-->
+
+    <!--Contact Start-->
+    <section id="contact">
+        <div class="container">
+            <div class="column contact-options">
+                <h1 class="heading-1">
+                    <span class="gradient-text">Lets Work Together</span>
+                </h1>
+                <p class="muted">
+                    Let’s collaborate and bring your vision to life! 
+                    I’m passionate about creating meaningful experiences and 
+                    would love to work together. Your ideas deserve the best, 
+                    and I’m here to make them shine. 
+                    Let’s embark on this exciting journey together!
+                    Please reach me out on the contacts below
+                </p>
+                <div class="options">
+                    <a href="#" class="flex option">
+                        <span class="flex-center icon-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <span>mileslegend7@gmail.com</span>
+                    </a>
+                    <a href="#" class="flex option">
+                        <span class="flex-center icon-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>+256759060525</span>
+                    </a>
+                    <a href="#" class="flex option">
+                        <span class="flex-center icon-wrapper">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>Kampala-Uganda</span>
+                    </a>
+                </div>
+            </div>
+            <div class="column contact-form">
+                <div class="top">
+                    <p class="muted">
+                        Need help? Kindly reach out for any inquiries am here for you
+                    </p>
+                </div>
+                <div class="middle">
+                    <div class="flex row">
+                      <input type="text" placeholder="First Name" class="control">
+                      <input type="text" placeholder="Last Name" class="control">    
+                    </div>
+                    <div class="flex row">
+                        <input type="email" placeholder="Email Address" class="control">
+                        <input type="tel" placeholder="Phone Number" class="control">    
+                    </div>
+                    <textarea cols='30' rows="10" class="control" placeholder="Type your message here" ></textarea>
+                </div>
+                <div class="flex-center bottom">
+                    <button class="btn primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact End-->
+
+    <!--Footer Start-->
+    <footer>
+        <div class="container">
+            <div class="flex-center logo">
+                <div class="flex-center logo-icon">
+                    <i class="fa-brands fa-sketch"></i>
+                </div>
+                <h1 class="name">Muhumuza</h1>
+            </div>
+            <div class="flex-center footer-tabs">
+                <a href="#hero" class="flex-center tab active">
+                    <h4>Home</h4>
+                </a>
+                <a href="#about" class="flex-center tab">
+                    <h4>About</h4>
+                </a>
+                <a href="#skills" class="flex-center tab">
+                    <h4>Skills</h4>
+                </a>
+                <a href="#services" class="flex-center tab">
+                    <h4>Services</h4>
+                </a>
+                <a href="#projects" class="flex-center tab">
+                    <h4>Projects</h4>
+                </a>
+                <a href="#feedbacks" class="flex-center tab">
+                    <h4>Feedback</h4>
+                </a>
+                <a href="#blog" class="flex-center tab">
+                    <h4>Blog</h4>
+                </a>
+            </div>
+            <div class="flex-center footer-handle-container">
+                <a href="#" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="flex-center icon-wrapper">
+                <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex-center copyright">
+            <p class="muted">
+                Built with love by Muhuan Developers
+            </p> |
+            <p>
+                Copyright &copy; All rights reserved - 2024
+            </p>
+        </div>
+    </footer>
+    <!--Footer end-->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
